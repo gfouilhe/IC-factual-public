@@ -1,6 +1,6 @@
 # ic-factual (public)
 
-Reproduce all figures and tables from the paper on **Memory vs. Context? Influential Factors of Factual Recall in Language Models** using local Python/bash. Models and datasets are downloaded from the Hugging Face Hub on first use.
+Reproduce all figures and tables from the paper on **Memory vs. Context? Influential Factors of Factual Recall in Language Models**. Models and datasets are downloaded from the Hugging Face Hub on first use.
 
 ## Installation
 
@@ -35,30 +35,6 @@ To regenerate all 12 figures and all 10 tables from precomputed experiment summa
 ```bash
 ./scripts/reproduce.sh figures
 ```
-
-### Paper Artifacts Synced
-
-| Figure | Description | Paper File |
-|--------|-------------|------------|
-| **Fig. 1** | Context vs. Memorization Score across 31 models | `paper/figures/context_memory_score_gen_all.png` |
-| **Fig. 2** | Generative filler length sweep (P(mem) vs length) | `paper/figures/exp22_gen_length.png` |
-| **Fig. 3** | Cross-family logit lens layer gap summary | `paper/figures/logit_lens_family_gap_summary.png` |
-| **Fig. 4** | Clean factual recall accuracy across relations (generative) | `paper/figures/clean_factual_recall.png` |
-| **Fig. 5** | Clean factual recall accuracy across relations (logprob) | `paper/figures/clean_factual_recall_lp.png` |
-| **Fig. 6** | Generative filler sweep full breakdown (P(mem), P(ctx), P(other)) | `paper/figures/exp22_gen_length_full.png` |
-| **Fig. 7** | Cross-family prose length effect ($\Delta P(\mathrm{mem})$ at $L=128$) | `paper/figures/cross_family_prose_l128_delta.png` |
-| **Fig. 8** | Conflict position sweep (head vs. tail) | `paper/figures/exp02_position_sweep.png` |
-| **Fig. 9** | Country Zipf frequency vs. memorization (deciles + delta) | `paper/figures/country_freq_mem_combined.png` |
-| **Fig. 10** | Alternative scaffold template comparison | `paper/figures/exp12_template_comparison.png` |
-| **Fig. 11** | Cross-family phrasing sensitivity swings | `paper/figures/cross_family_phrasing_swings.png` |
-| **Fig. 12** | Redundancy / repetition sweep ($K \in \{1, 2, 4, 8\}$ copies at $L=0$) | `paper/figures/exp07_copies.png` |
-
-All 10 LaTeX table fragments (`tables/*.tex`) are synced to `paper/tables/`:
-- `clean_factual_recall.tex`, `clean_factual_recall_lp.tex`
-- `country_freq_mem_hypothesis.tex`, `paraconflict_native_sub_vs_coh.tex`, `paraconflict_entity_frequency.tex`
-- `cross_family_phrasing.tex`, `cross_family_prose_l128.tex`
-- `relations_posttraining_by_size.tex`, `relations_size_mem_by_family.tex`
-- `model_inference_specs.tex`
 
 ## 3. Generate Datasets
 
