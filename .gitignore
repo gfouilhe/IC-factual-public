@@ -1,0 +1,32 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+.ruff_cache
+
+# Virtual environments
+.venv
+
+# Generated reproduction artifacts
+data/
+results/
+figures/
+tables/
+
+# Optional tooling cruft
+.ipynb_checkpoints/
+.ruff_cache/
+.mypy_cache/
+.DS_Store
+
+# LaTeX auxiliary files
+*.aux
+*.bbl
+*.blg
+*.out
+*.synctex.gz
+*.fls
+*.fdb_latexmk

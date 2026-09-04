@@ -1,0 +1,1783 @@
+{
+  "_meta": {
+    "description": "Baseline factual recall without conflict across all 31 models and 6 relations.",
+    "categories": [
+      "World Capital",
+      "Athlete Sport",
+      "Book Author",
+      "Company Headquarter",
+      "Company Founder",
+      "Official Language"
+    ],
+    "n_expected_per_model": 2146
+  },
+  "models": {
+    "160m": {
+      "label": "160m",
+      "display_label": "Pythia-160m",
+      "family": "pythia",
+      "params_b": 0.16,
+      "categories": {
+        "World Capital": {
+          "n": 218,
+          "gen_correct": 19,
+          "gen_acc": 0.0871559633027523,
+          "lp_correct": 154,
+          "lp_acc": 0.7064220183486238
+        },
+        "Athlete Sport": {
+          "n": 532,
+          "gen_correct": 153,
+          "gen_acc": 0.287593984962406,
+          "lp_correct": 290,
+          "lp_acc": 0.5451127819548872
+        },
+        "Book Author": {
+          "n": 500,
+          "gen_correct": 0,
+          "gen_acc": 0.0,
+          "lp_correct": 261,
+          "lp_acc": 0.522
+        },
+        "Company Headquarter": {
+          "n": 500,
+          "gen_correct": 31,
+          "gen_acc": 0.062,
+          "lp_correct": 268,
+          "lp_acc": 0.536
+        },
+        "Company Founder": {
+          "n": 203,
+          "gen_correct": 0,
+          "gen_acc": 0.0,
+          "lp_correct": 108,
+          "lp_acc": 0.5320197044334976
+        },
+        "Official Language": {
+          "n": 193,
+          "gen_correct": 79,
+          "gen_acc": 0.40932642487046633,
+          "lp_correct": 156,
+          "lp_acc": 0.8082901554404145
+        }
+      },
+      "overall": {
+        "n": 2146,
+        "gen_correct": 282,
+        "gen_acc": 0.13140726933830382,
+        "lp_correct": 1237,
+        "lp_acc": 0.576421248835042
+      }
+    },
+    "410m": {
+      "label": "410m",
+      "display_label": "Pythia-410m",
+      "family": "pythia",
+      "params_b": 0.41,
+      "categories": {
+        "World Capital": {
+          "n": 218,
+          "gen_correct": 86,
+          "gen_acc": 0.3944954128440367,
+          "lp_correct": 207,
+          "lp_acc": 0.9495412844036697
+        },
+        "Athlete Sport": {
+          "n": 532,
+          "gen_correct": 213,
+          "gen_acc": 0.40037593984962405,
+          "lp_correct": 362,
+          "lp_acc": 0.6804511278195489
+        },
+        "Book Author": {
+          "n": 500,
+          "gen_correct": 1,
+          "gen_acc": 0.002,
+          "lp_correct": 300,
+          "lp_acc": 0.6
+        },
+        "Company Headquarter": {
+          "n": 500,
+          "gen_correct": 49,
+          "gen_acc": 0.098,
+          "lp_correct": 285,
+          "lp_acc": 0.57
+        },
+        "Company Founder": {
+          "n": 203,
+          "gen_correct": 0,
+          "gen_acc": 0.0,
+          "lp_correct": 125,
+          "lp_acc": 0.6157635467980296
+        },
+        "Official Language": {
+          "n": 193,
+          "gen_correct": 142,
+          "gen_acc": 0.7357512953367875,
+          "lp_correct": 185,
+          "lp_acc": 0.9585492227979274
+        }
+      },
+      "overall": {
+        "n": 2146,
+        "gen_correct": 491,
+        "gen_acc": 0.2287977632805219,
+        "lp_correct": 1464,
+        "lp_acc": 0.6821994408201305
+      }
+    },
+    "1b": {
+      "label": "1b",
+      "display_label": "Pythia-1b",
+      "family": "pythia",
+      "params_b": 1.0,
+      "categories": {
+        "World Capital": {
+          "n": 218,
+          "gen_correct": 115,
+          "gen_acc": 0.5275229357798165,
+          "lp_correct": 211,
+          "lp_acc": 0.9678899082568807
+        },
+        "Athlete Sport": {
+          "n": 532,
+          "gen_correct": 293,
+          "gen_acc": 0.5507518796992481,
+          "lp_correct": 386,
+          "lp_acc": 0.7255639097744361
+        },
+        "Book Author": {
+          "n": 500,
+          "gen_correct": 7,
+          "gen_acc": 0.014,
+          "lp_correct": 339,
+          "lp_acc": 0.678
+        },
+        "Company Headquarter": {
+          "n": 500,
+          "gen_correct": 80,
+          "gen_acc": 0.16,
+          "lp_correct": 323,
+          "lp_acc": 0.646
+        },
+        "Company Founder": {
+          "n": 203,
+          "gen_correct": 10,
+          "gen_acc": 0.04926108374384237,
+          "lp_correct": 144,
+          "lp_acc": 0.7093596059113301
+        },
+        "Official Language": {
+          "n": 193,
+          "gen_correct": 168,
+          "gen_acc": 0.8704663212435233,
+          "lp_correct": 185,
+          "lp_acc": 0.9585492227979274
+        }
+      },
+      "overall": {
+        "n": 2146,
+        "gen_correct": 673,
+        "gen_acc": 0.3136067101584343,
+        "lp_correct": 1588,
+        "lp_acc": 0.7399813606710158
+      }
+    },
+    "1.4b": {
+      "label": "1.4b",
+      "display_label": "Pythia-1.4b",
+      "family": "pythia",
+      "params_b": 1.4,
+      "categories": {
+        "World Capital": {
+          "n": 218,
+          "gen_correct": 168,
+          "gen_acc": 0.7706422018348624,
+          "lp_correct": 215,
+          "lp_acc": 0.9862385321100917
+        },
+        "Athlete Sport": {
+          "n": 532,
+          "gen_correct": 371,
+          "gen_acc": 0.6973684210526315,
+          "lp_correct": 382,
+          "lp_acc": 0.7180451127819549
+        },
+        "Book Author": {
+          "n": 500,
+          "gen_correct": 0,
+          "gen_acc": 0.0,
+          "lp_correct": 355,
+          "lp_acc": 0.71
+        },
+        "Company Headquarter": {
+          "n": 500,
+          "gen_correct": 106,
+          "gen_acc": 0.212,
+          "lp_correct": 334,
+          "lp_acc": 0.668
+        },
+        "Company Founder": {
+          "n": 203,
+          "gen_correct": 8,
+          "gen_acc": 0.03940886699507389,
+          "lp_correct": 153,
+          "lp_acc": 0.7536945812807881
+        },
+        "Official Language": {
+          "n": 193,
+          "gen_correct": 170,
+          "gen_acc": 0.8808290155440415,
+          "lp_correct": 191,
+          "lp_acc": 0.9896373056994818
+        }
+      },
+      "overall": {
+        "n": 2146,
+        "gen_correct": 823,
+        "gen_acc": 0.38350419384902146,
+        "lp_correct": 1630,
+        "lp_acc": 0.7595526561043803
+      }
+    },
+    "2.8b": {
+      "label": "2.8b",
+      "display_label": "Pythia-2.8b",
+      "family": "pythia",
+      "params_b": 2.8,
+      "categories": {
+        "World Capital": {
+          "n": 218,
+          "gen_correct": 189,
+          "gen_acc": 0.8669724770642202,
+          "lp_correct": 215,
+          "lp_acc": 0.9862385321100917
+        },
+        "Athlete Sport": {
+          "n": 532,
+          "gen_correct": 328,
+          "gen_acc": 0.6165413533834586,
+          "lp_correct": 483,
+          "lp_acc": 0.9078947368421053
+        },
+        "Book Author": {
+          "n": 500,
+          "gen_correct": 2,
+          "gen_acc": 0.004,
+          "lp_correct": 409,
+          "lp_acc": 0.818
+        },
+        "Company Headquarter": {
+          "n": 500,
+          "gen_correct": 141,
+          "gen_acc": 0.282,
+          "lp_correct": 356,
+          "lp_acc": 0.712
+        },
+        "Company Founder": {
+          "n": 203,
+          "gen_correct": 23,
+          "gen_acc": 0.11330049261083744,
+          "lp_correct": 160,
+          "lp_acc": 0.7881773399014779
+        },
+        "Official Language": {
+          "n": 193,
+          "gen_correct": 180,
+          "gen_acc": 0.9326424870466321,
+          "lp_correct": 192,
+          "lp_acc": 0.9948186528497409
+        }
+      },
+      "overall": {
+        "n": 2146,
+        "gen_correct": 863,
+        "gen_acc": 0.402143522833178,
+        "lp_correct": 1815,
+        "lp_acc": 0.8457595526561044
+      }
+    },
+    "6.9b": {
+      "label": "6.9b",
+      "display_label": "Pythia-6.9b",
+      "family": "pythia",
+      "params_b": 6.9,
+      "categories": {
+        "World Capital": {
+          "n": 218,
+          "gen_correct": 183,
+          "gen_acc": 0.8394495412844036,
+          "lp_correct": 216,
+          "lp_acc": 0.9908256880733946
+        },
+        "Athlete Sport": {
+          "n": 532,
+          "gen_correct": 329,
+          "gen_acc": 0.618421052631579,
+          "lp_correct": 432,
+          "lp_acc": 0.8120300751879699
+        },
+        "Book Author": {
+          "n": 500,
+          "gen_correct": 47,
+          "gen_acc": 0.094,
+          "lp_correct": 444,
+          "lp_acc": 0.888
+        },
+        "Company Headquarter": {
+          "n": 500,
+          "gen_correct": 177,
+          "gen_acc": 0.354,
+          "lp_correct": 387,
+          "lp_acc": 0.774
+        },
+        "Company Founder": {
+          "n": 203,
+          "gen_correct": 41,
+          "gen_acc": 0.2019704433497537,
+          "lp_correct": 169,
+          "lp_acc": 0.8325123152709359
+        },
+        "Official Language": {
+          "n": 193,
+          "gen_correct": 187,
+          "gen_acc": 0.9689119170984456,
+          "lp_correct": 192,
+          "lp_acc": 0.9948186528497409
+        }
+      },
+      "overall": {
+        "n": 2146,
+        "gen_correct": 964,
+        "gen_acc": 0.44920782851817337,
+        "lp_correct": 1840,
+        "lp_acc": 0.8574091332712023
+      }
+    },
+    "12b": {
+      "label": "12b",
+      "display_label": "Pythia-12b",
+      "family": "pythia",
+      "params_b": 12.0,
+      "categories": {
+        "World Capital": {
+          "n": 218,
+          "gen_correct": 194,
+          "gen_acc": 0.8899082568807339,
+          "lp_correct": 215,
+          "lp_acc": 0.9862385321100917
+        },
+        "Athlete Sport": {
+          "n": 532,
+          "gen_correct": 436,
+          "gen_acc": 0.8195488721804511,
+          "lp_correct": 488,
+          "lp_acc": 0.9172932330827067
+        },
+        "Book Author": {
+          "n": 500,
+          "gen_correct": 79,
+          "gen_acc": 0.158,
+          "lp_correct": 456,
+          "lp_acc": 0.912
+        },
+        "Company Headquarter": {
+          "n": 500,
+          "gen_correct": 201,
+          "gen_acc": 0.402,
+          "lp_correct": 416,
+          "lp_acc": 0.832
+        },
+        "Company Founder": {
+          "n": 203,
+          "gen_correct": 45,
+          "gen_acc": 0.22167487684729065,
+          "lp_correct": 169,
+          "lp_acc": 0.8325123152709359
+        },
+        "Official Language": {
+          "n": 193,
+          "gen_correct": 182,
+          "gen_acc": 0.9430051813471503,
+          "lp_correct": 192,
+          "lp_acc": 0.9948186528497409
+        }
+      },
+      "overall": {
+        "n": 2146,
+        "gen_correct": 1137,
+        "gen_acc": 0.5298229263746506,
+        "lp_correct": 1936,
+        "lp_acc": 0.902143522833178
+      }
+    },
+    "gpt2": {
+      "label": "gpt2",
+      "display_label": "GPT-2 small",
+      "family": "gpt2",
+      "params_b": 0.124,
+      "categories": {
+        "World Capital": {
+          "n": 218,
+          "gen_correct": 41,
+          "gen_acc": 0.18807339449541285,
+          "lp_correct": 154,
+          "lp_acc": 0.7064220183486238
+        },
+        "Athlete Sport": {
+          "n": 532,
+          "gen_correct": 304,
+          "gen_acc": 0.5714285714285714,
+          "lp_correct": 333,
+          "lp_acc": 0.6259398496240601
+        },
+        "Book Author": {
+          "n": 500,
+          "gen_correct": 0,
+          "gen_acc": 0.0,
+          "lp_correct": 248,
+          "lp_acc": 0.496
+        },
+        "Company Headquarter": {
+          "n": 500,
+          "gen_correct": 26,
+          "gen_acc": 0.052,
+          "lp_correct": 266,
+          "lp_acc": 0.532
+        },
+        "Company Founder": {
+          "n": 203,
+          "gen_correct": 3,
+          "gen_acc": 0.014778325123152709,
+          "lp_correct": 115,
+          "lp_acc": 0.5665024630541872
+        },
+        "Official Language": {
+          "n": 193,
+          "gen_correct": 46,
+          "gen_acc": 0.23834196891191708,
+          "lp_correct": 159,
+          "lp_acc": 0.8238341968911918
+        }
+      },
+      "overall": {
+        "n": 2146,
+        "gen_correct": 420,
+        "gen_acc": 0.195712954333644,
+        "lp_correct": 1275,
+        "lp_acc": 0.5941286113699907
+      }
+    },
+    "gpt2-medium": {
+      "label": "gpt2-medium",
+      "display_label": "GPT-2 medium",
+      "family": "gpt2",
+      "params_b": 0.355,
+      "categories": {
+        "World Capital": {
+          "n": 218,
+          "gen_correct": 85,
+          "gen_acc": 0.38990825688073394,
+          "lp_correct": 178,
+          "lp_acc": 0.8165137614678899
+        },
+        "Athlete Sport": {
+          "n": 532,
+          "gen_correct": 373,
+          "gen_acc": 0.7011278195488722,
+          "lp_correct": 427,
+          "lp_acc": 0.8026315789473685
+        },
+        "Book Author": {
+          "n": 500,
+          "gen_correct": 0,
+          "gen_acc": 0.0,
+          "lp_correct": 271,
+          "lp_acc": 0.542
+        },
+        "Company Headquarter": {
+          "n": 500,
+          "gen_correct": 53,
+          "gen_acc": 0.106,
+          "lp_correct": 286,
+          "lp_acc": 0.572
+        },
+        "Company Founder": {
+          "n": 203,
+          "gen_correct": 4,
+          "gen_acc": 0.019704433497536946,
+          "lp_correct": 126,
+          "lp_acc": 0.6206896551724138
+        },
+        "Official Language": {
+          "n": 193,
+          "gen_correct": 142,
+          "gen_acc": 0.7357512953367875,
+          "lp_correct": 166,
+          "lp_acc": 0.8601036269430051
+        }
+      },
+      "overall": {
+        "n": 2146,
+        "gen_correct": 657,
+        "gen_acc": 0.3061509785647717,
+        "lp_correct": 1454,
+        "lp_acc": 0.6775396085740913
+      }
+    },
+    "gpt2-large": {
+      "label": "gpt2-large",
+      "display_label": "GPT-2 large",
+      "family": "gpt2",
+      "params_b": 0.774,
+      "categories": {
+        "World Capital": {
+          "n": 218,
+          "gen_correct": 118,
+          "gen_acc": 0.5412844036697247,
+          "lp_correct": 190,
+          "lp_acc": 0.8715596330275229
+        },
+        "Athlete Sport": {
+          "n": 532,
+          "gen_correct": 382,
+          "gen_acc": 0.7180451127819549,
+          "lp_correct": 436,
+          "lp_acc": 0.8195488721804511
+        },
+        "Book Author": {
+          "n": 500,
+          "gen_correct": 1,
+          "gen_acc": 0.002,
+          "lp_correct": 302,
+          "lp_acc": 0.604
+        },
+        "Company Headquarter": {
+          "n": 500,
+          "gen_correct": 72,
+          "gen_acc": 0.144,
+          "lp_correct": 302,
+          "lp_acc": 0.604
+        },
+        "Company Founder": {
+          "n": 203,
+          "gen_correct": 29,
+          "gen_acc": 0.14285714285714285,
+          "lp_correct": 134,
+          "lp_acc": 0.6600985221674877
+        },
+        "Official Language": {
+          "n": 193,
+          "gen_correct": 168,
+          "gen_acc": 0.8704663212435233,
+          "lp_correct": 171,
+          "lp_acc": 0.8860103626943006
+        }
+      },
+      "overall": {
+        "n": 2146,
+        "gen_correct": 770,
+        "gen_acc": 0.35880708294501396,
+        "lp_correct": 1535,
+        "lp_acc": 0.7152842497670084
+      }
+    },
+    "gpt2-xl": {
+      "label": "gpt2-xl",
+      "display_label": "GPT-2 xl",
+      "family": "gpt2",
+      "params_b": 1.5,
+      "categories": {
+        "World Capital": {
+          "n": 218,
+          "gen_correct": 139,
+          "gen_acc": 0.6376146788990825,
+          "lp_correct": 203,
+          "lp_acc": 0.9311926605504587
+        },
+        "Athlete Sport": {
+          "n": 532,
+          "gen_correct": 386,
+          "gen_acc": 0.7255639097744361,
+          "lp_correct": 442,
+          "lp_acc": 0.8308270676691729
+        },
+        "Book Author": {
+          "n": 500,
+          "gen_correct": 27,
+          "gen_acc": 0.054,
+          "lp_correct": 345,
+          "lp_acc": 0.69
+        },
+        "Company Headquarter": {
+          "n": 500,
+          "gen_correct": 92,
+          "gen_acc": 0.184,
+          "lp_correct": 320,
+          "lp_acc": 0.64
+        },
+        "Company Founder": {
+          "n": 203,
+          "gen_correct": 40,
+          "gen_acc": 0.19704433497536947,
+          "lp_correct": 151,
+          "lp_acc": 0.7438423645320197
+        },
+        "Official Language": {
+          "n": 193,
+          "gen_correct": 171,
+          "gen_acc": 0.8860103626943006,
+          "lp_correct": 183,
+          "lp_acc": 0.9481865284974094
+        }
+      },
+      "overall": {
+        "n": 2146,
+        "gen_correct": 855,
+        "gen_acc": 0.3984156570363467,
+        "lp_correct": 1644,
+        "lp_acc": 0.766076421248835
+      }
+    },
+    "qwen3-0.6b": {
+      "label": "qwen3-0.6b",
+      "display_label": "Qwen3-0.6B",
+      "family": "qwen3",
+      "params_b": 0.6,
+      "categories": {
+        "World Capital": {
+          "n": 218,
+          "gen_correct": 5,
+          "gen_acc": 0.022935779816513763,
+          "lp_correct": 177,
+          "lp_acc": 0.8119266055045872
+        },
+        "Athlete Sport": {
+          "n": 532,
+          "gen_correct": 239,
+          "gen_acc": 0.4492481203007519,
+          "lp_correct": 322,
+          "lp_acc": 0.6052631578947368
+        },
+        "Book Author": {
+          "n": 500,
+          "gen_correct": 1,
+          "gen_acc": 0.002,
+          "lp_correct": 279,
+          "lp_acc": 0.558
+        },
+        "Company Headquarter": {
+          "n": 500,
+          "gen_correct": 46,
+          "gen_acc": 0.092,
+          "lp_correct": 275,
+          "lp_acc": 0.55
+        },
+        "Company Founder": {
+          "n": 203,
+          "gen_correct": 1,
+          "gen_acc": 0.0049261083743842365,
+          "lp_correct": 122,
+          "lp_acc": 0.6009852216748769
+        },
+        "Official Language": {
+          "n": 193,
+          "gen_correct": 132,
+          "gen_acc": 0.6839378238341969,
+          "lp_correct": 158,
+          "lp_acc": 0.8186528497409327
+        }
+      },
+      "overall": {
+        "n": 2146,
+        "gen_correct": 424,
+        "gen_acc": 0.19757688723205966,
+        "lp_correct": 1333,
+        "lp_acc": 0.6211556383970177
+      }
+    },
+    "qwen3-1.7b": {
+      "label": "qwen3-1.7b",
+      "display_label": "Qwen3-1.7B",
+      "family": "qwen3",
+      "params_b": 1.7,
+      "categories": {
+        "World Capital": {
+          "n": 218,
+          "gen_correct": 48,
+          "gen_acc": 0.22018348623853212,
+          "lp_correct": 182,
+          "lp_acc": 0.8348623853211009
+        },
+        "Athlete Sport": {
+          "n": 532,
+          "gen_correct": 405,
+          "gen_acc": 0.7612781954887218,
+          "lp_correct": 400,
+          "lp_acc": 0.7518796992481203
+        },
+        "Book Author": {
+          "n": 500,
+          "gen_correct": 1,
+          "gen_acc": 0.002,
+          "lp_correct": 364,
+          "lp_acc": 0.728
+        },
+        "Company Headquarter": {
+          "n": 500,
+          "gen_correct": 78,
+          "gen_acc": 0.156,
+          "lp_correct": 323,
+          "lp_acc": 0.646
+        },
+        "Company Founder": {
+          "n": 203,
+          "gen_correct": 4,
+          "gen_acc": 0.019704433497536946,
+          "lp_correct": 139,
+          "lp_acc": 0.6847290640394089
+        },
+        "Official Language": {
+          "n": 193,
+          "gen_correct": 173,
+          "gen_acc": 0.8963730569948186,
+          "lp_correct": 187,
+          "lp_acc": 0.9689119170984456
+        }
+      },
+      "overall": {
+        "n": 2146,
+        "gen_correct": 709,
+        "gen_acc": 0.3303821062441752,
+        "lp_correct": 1595,
+        "lp_acc": 0.7432432432432432
+      }
+    },
+    "qwen3-4b": {
+      "label": "qwen3-4b",
+      "display_label": "Qwen3-4B",
+      "family": "qwen3",
+      "params_b": 4.0,
+      "categories": {
+        "World Capital": {
+          "n": 218,
+          "gen_correct": 134,
+          "gen_acc": 0.6146788990825688,
+          "lp_correct": 213,
+          "lp_acc": 0.9770642201834863
+        },
+        "Athlete Sport": {
+          "n": 532,
+          "gen_correct": 429,
+          "gen_acc": 0.806390977443609,
+          "lp_correct": 436,
+          "lp_acc": 0.8195488721804511
+        },
+        "Book Author": {
+          "n": 500,
+          "gen_correct": 54,
+          "gen_acc": 0.108,
+          "lp_correct": 451,
+          "lp_acc": 0.902
+        },
+        "Company Headquarter": {
+          "n": 500,
+          "gen_correct": 42,
+          "gen_acc": 0.084,
+          "lp_correct": 346,
+          "lp_acc": 0.692
+        },
+        "Company Founder": {
+          "n": 203,
+          "gen_correct": 15,
+          "gen_acc": 0.07389162561576355,
+          "lp_correct": 158,
+          "lp_acc": 0.7783251231527094
+        },
+        "Official Language": {
+          "n": 193,
+          "gen_correct": 181,
+          "gen_acc": 0.9378238341968912,
+          "lp_correct": 190,
+          "lp_acc": 0.9844559585492227
+        }
+      },
+      "overall": {
+        "n": 2146,
+        "gen_correct": 855,
+        "gen_acc": 0.3984156570363467,
+        "lp_correct": 1794,
+        "lp_acc": 0.8359739049394221
+      }
+    },
+    "qwen3-8b": {
+      "label": "qwen3-8b",
+      "display_label": "Qwen3-8B",
+      "family": "qwen3",
+      "params_b": 8.0,
+      "categories": {
+        "World Capital": {
+          "n": 218,
+          "gen_correct": 145,
+          "gen_acc": 0.6651376146788991,
+          "lp_correct": 213,
+          "lp_acc": 0.9770642201834863
+        },
+        "Athlete Sport": {
+          "n": 532,
+          "gen_correct": 491,
+          "gen_acc": 0.9229323308270677,
+          "lp_correct": 485,
+          "lp_acc": 0.9116541353383458
+        },
+        "Book Author": {
+          "n": 500,
+          "gen_correct": 38,
+          "gen_acc": 0.076,
+          "lp_correct": 466,
+          "lp_acc": 0.932
+        },
+        "Company Headquarter": {
+          "n": 500,
+          "gen_correct": 193,
+          "gen_acc": 0.386,
+          "lp_correct": 422,
+          "lp_acc": 0.844
+        },
+        "Company Founder": {
+          "n": 203,
+          "gen_correct": 7,
+          "gen_acc": 0.034482758620689655,
+          "lp_correct": 173,
+          "lp_acc": 0.8522167487684729
+        },
+        "Official Language": {
+          "n": 193,
+          "gen_correct": 179,
+          "gen_acc": 0.927461139896373,
+          "lp_correct": 191,
+          "lp_acc": 0.9896373056994818
+        }
+      },
+      "overall": {
+        "n": 2146,
+        "gen_correct": 1053,
+        "gen_acc": 0.4906803355079217,
+        "lp_correct": 1950,
+        "lp_acc": 0.9086672879776329
+      }
+    },
+    "qwen3-14b": {
+      "label": "qwen3-14b",
+      "display_label": "Qwen3-14B",
+      "family": "qwen3",
+      "params_b": 14.0,
+      "categories": {
+        "World Capital": {
+          "n": 218,
+          "gen_correct": 172,
+          "gen_acc": 0.7889908256880734,
+          "lp_correct": 217,
+          "lp_acc": 0.9954128440366973
+        },
+        "Athlete Sport": {
+          "n": 532,
+          "gen_correct": 466,
+          "gen_acc": 0.8759398496240601,
+          "lp_correct": 497,
+          "lp_acc": 0.9342105263157895
+        },
+        "Book Author": {
+          "n": 500,
+          "gen_correct": 221,
+          "gen_acc": 0.442,
+          "lp_correct": 490,
+          "lp_acc": 0.98
+        },
+        "Company Headquarter": {
+          "n": 500,
+          "gen_correct": 266,
+          "gen_acc": 0.532,
+          "lp_correct": 455,
+          "lp_acc": 0.91
+        },
+        "Company Founder": {
+          "n": 203,
+          "gen_correct": 45,
+          "gen_acc": 0.22167487684729065,
+          "lp_correct": 179,
+          "lp_acc": 0.8817733990147784
+        },
+        "Official Language": {
+          "n": 193,
+          "gen_correct": 181,
+          "gen_acc": 0.9378238341968912,
+          "lp_correct": 192,
+          "lp_acc": 0.9948186528497409
+        }
+      },
+      "overall": {
+        "n": 2146,
+        "gen_correct": 1351,
+        "gen_acc": 0.6295433364398881,
+        "lp_correct": 2030,
+        "lp_acc": 0.9459459459459459
+      }
+    },
+    "qwen3-32b": {
+      "label": "qwen3-32b",
+      "display_label": "Qwen3-32B",
+      "family": "qwen3",
+      "params_b": 32.0,
+      "categories": {
+        "World Capital": {
+          "n": 218,
+          "gen_correct": 131,
+          "gen_acc": 0.6009174311926605,
+          "lp_correct": 218,
+          "lp_acc": 1.0
+        },
+        "Athlete Sport": {
+          "n": 532,
+          "gen_correct": 446,
+          "gen_acc": 0.8383458646616542,
+          "lp_correct": 519,
+          "lp_acc": 0.9755639097744361
+        },
+        "Book Author": {
+          "n": 500,
+          "gen_correct": 218,
+          "gen_acc": 0.436,
+          "lp_correct": 492,
+          "lp_acc": 0.984
+        },
+        "Company Headquarter": {
+          "n": 500,
+          "gen_correct": 257,
+          "gen_acc": 0.514,
+          "lp_correct": 464,
+          "lp_acc": 0.928
+        },
+        "Company Founder": {
+          "n": 203,
+          "gen_correct": 48,
+          "gen_acc": 0.23645320197044334,
+          "lp_correct": 187,
+          "lp_acc": 0.9211822660098522
+        },
+        "Official Language": {
+          "n": 193,
+          "gen_correct": 179,
+          "gen_acc": 0.927461139896373,
+          "lp_correct": 191,
+          "lp_acc": 0.9896373056994818
+        }
+      },
+      "overall": {
+        "n": 2146,
+        "gen_correct": 1279,
+        "gen_acc": 0.5959925442684063,
+        "lp_correct": 2071,
+        "lp_acc": 0.9650512581547064
+      }
+    },
+    "qwen3-base-0.6b": {
+      "label": "qwen3-base-0.6b",
+      "display_label": "Qwen3-Base-0.6B",
+      "family": "qwen3-base",
+      "params_b": 0.6,
+      "categories": {
+        "World Capital": {
+          "n": 218,
+          "gen_correct": 52,
+          "gen_acc": 0.23853211009174313,
+          "lp_correct": 208,
+          "lp_acc": 0.9541284403669725
+        },
+        "Athlete Sport": {
+          "n": 532,
+          "gen_correct": 320,
+          "gen_acc": 0.6015037593984962,
+          "lp_correct": 373,
+          "lp_acc": 0.7011278195488722
+        },
+        "Book Author": {
+          "n": 500,
+          "gen_correct": 1,
+          "gen_acc": 0.002,
+          "lp_correct": 340,
+          "lp_acc": 0.68
+        },
+        "Company Headquarter": {
+          "n": 500,
+          "gen_correct": 60,
+          "gen_acc": 0.12,
+          "lp_correct": 282,
+          "lp_acc": 0.564
+        },
+        "Company Founder": {
+          "n": 203,
+          "gen_correct": 4,
+          "gen_acc": 0.019704433497536946,
+          "lp_correct": 135,
+          "lp_acc": 0.6650246305418719
+        },
+        "Official Language": {
+          "n": 193,
+          "gen_correct": 167,
+          "gen_acc": 0.8652849740932642,
+          "lp_correct": 183,
+          "lp_acc": 0.9481865284974094
+        }
+      },
+      "overall": {
+        "n": 2146,
+        "gen_correct": 604,
+        "gen_acc": 0.2814538676607642,
+        "lp_correct": 1521,
+        "lp_acc": 0.7087604846225536
+      }
+    },
+    "qwen3-base-1.7b": {
+      "label": "qwen3-base-1.7b",
+      "display_label": "Qwen3-Base-1.7B",
+      "family": "qwen3-base",
+      "params_b": 1.7,
+      "categories": {
+        "World Capital": {
+          "n": 218,
+          "gen_correct": 57,
+          "gen_acc": 0.26146788990825687,
+          "lp_correct": 214,
+          "lp_acc": 0.981651376146789
+        },
+        "Athlete Sport": {
+          "n": 532,
+          "gen_correct": 442,
+          "gen_acc": 0.8308270676691729,
+          "lp_correct": 441,
+          "lp_acc": 0.8289473684210527
+        },
+        "Book Author": {
+          "n": 500,
+          "gen_correct": 3,
+          "gen_acc": 0.006,
+          "lp_correct": 422,
+          "lp_acc": 0.844
+        },
+        "Company Headquarter": {
+          "n": 500,
+          "gen_correct": 99,
+          "gen_acc": 0.198,
+          "lp_correct": 333,
+          "lp_acc": 0.666
+        },
+        "Company Founder": {
+          "n": 203,
+          "gen_correct": 0,
+          "gen_acc": 0.0,
+          "lp_correct": 158,
+          "lp_acc": 0.7783251231527094
+        },
+        "Official Language": {
+          "n": 193,
+          "gen_correct": 180,
+          "gen_acc": 0.9326424870466321,
+          "lp_correct": 191,
+          "lp_acc": 0.9896373056994818
+        }
+      },
+      "overall": {
+        "n": 2146,
+        "gen_correct": 781,
+        "gen_acc": 0.363932898415657,
+        "lp_correct": 1759,
+        "lp_acc": 0.8196644920782852
+      }
+    },
+    "qwen3-base-4b": {
+      "label": "qwen3-base-4b",
+      "display_label": "Qwen3-Base-4B",
+      "family": "qwen3-base",
+      "params_b": 4.0,
+      "categories": {
+        "World Capital": {
+          "n": 218,
+          "gen_correct": 150,
+          "gen_acc": 0.6880733944954128,
+          "lp_correct": 216,
+          "lp_acc": 0.9908256880733946
+        },
+        "Athlete Sport": {
+          "n": 532,
+          "gen_correct": 463,
+          "gen_acc": 0.8703007518796992,
+          "lp_correct": 463,
+          "lp_acc": 0.8703007518796992
+        },
+        "Book Author": {
+          "n": 500,
+          "gen_correct": 80,
+          "gen_acc": 0.16,
+          "lp_correct": 470,
+          "lp_acc": 0.94
+        },
+        "Company Headquarter": {
+          "n": 500,
+          "gen_correct": 130,
+          "gen_acc": 0.26,
+          "lp_correct": 375,
+          "lp_acc": 0.75
+        },
+        "Company Founder": {
+          "n": 203,
+          "gen_correct": 5,
+          "gen_acc": 0.024630541871921183,
+          "lp_correct": 167,
+          "lp_acc": 0.8226600985221675
+        },
+        "Official Language": {
+          "n": 193,
+          "gen_correct": 183,
+          "gen_acc": 0.9481865284974094,
+          "lp_correct": 192,
+          "lp_acc": 0.9948186528497409
+        }
+      },
+      "overall": {
+        "n": 2146,
+        "gen_correct": 1011,
+        "gen_acc": 0.47110904007455734,
+        "lp_correct": 1883,
+        "lp_acc": 0.8774464119291705
+      }
+    },
+    "qwen3-base-8b": {
+      "label": "qwen3-base-8b",
+      "display_label": "Qwen3-Base-8B",
+      "family": "qwen3-base",
+      "params_b": 8.0,
+      "categories": {
+        "World Capital": {
+          "n": 218,
+          "gen_correct": 200,
+          "gen_acc": 0.9174311926605505,
+          "lp_correct": 216,
+          "lp_acc": 0.9908256880733946
+        },
+        "Athlete Sport": {
+          "n": 532,
+          "gen_correct": 491,
+          "gen_acc": 0.9229323308270677,
+          "lp_correct": 490,
+          "lp_acc": 0.9210526315789473
+        },
+        "Book Author": {
+          "n": 500,
+          "gen_correct": 197,
+          "gen_acc": 0.394,
+          "lp_correct": 484,
+          "lp_acc": 0.968
+        },
+        "Company Headquarter": {
+          "n": 500,
+          "gen_correct": 245,
+          "gen_acc": 0.49,
+          "lp_correct": 445,
+          "lp_acc": 0.89
+        },
+        "Company Founder": {
+          "n": 203,
+          "gen_correct": 15,
+          "gen_acc": 0.07389162561576355,
+          "lp_correct": 180,
+          "lp_acc": 0.8866995073891626
+        },
+        "Official Language": {
+          "n": 193,
+          "gen_correct": 181,
+          "gen_acc": 0.9378238341968912,
+          "lp_correct": 193,
+          "lp_acc": 1.0
+        }
+      },
+      "overall": {
+        "n": 2146,
+        "gen_correct": 1329,
+        "gen_acc": 0.619291705498602,
+        "lp_correct": 2008,
+        "lp_acc": 0.9356943150046598
+      }
+    },
+    "qwen3-base-14b": {
+      "label": "qwen3-base-14b",
+      "display_label": "Qwen3-Base-14B",
+      "family": "qwen3-base",
+      "params_b": 14.0,
+      "categories": {
+        "World Capital": {
+          "n": 218,
+          "gen_correct": 174,
+          "gen_acc": 0.7981651376146789,
+          "lp_correct": 217,
+          "lp_acc": 0.9954128440366973
+        },
+        "Athlete Sport": {
+          "n": 532,
+          "gen_correct": 489,
+          "gen_acc": 0.9191729323308271,
+          "lp_correct": 502,
+          "lp_acc": 0.943609022556391
+        },
+        "Book Author": {
+          "n": 500,
+          "gen_correct": 147,
+          "gen_acc": 0.294,
+          "lp_correct": 481,
+          "lp_acc": 0.962
+        },
+        "Company Headquarter": {
+          "n": 500,
+          "gen_correct": 337,
+          "gen_acc": 0.674,
+          "lp_correct": 467,
+          "lp_acc": 0.934
+        },
+        "Company Founder": {
+          "n": 203,
+          "gen_correct": 45,
+          "gen_acc": 0.22167487684729065,
+          "lp_correct": 185,
+          "lp_acc": 0.9113300492610837
+        },
+        "Official Language": {
+          "n": 193,
+          "gen_correct": 180,
+          "gen_acc": 0.9326424870466321,
+          "lp_correct": 192,
+          "lp_acc": 0.9948186528497409
+        }
+      },
+      "overall": {
+        "n": 2146,
+        "gen_correct": 1372,
+        "gen_acc": 0.6393289841565704,
+        "lp_correct": 2044,
+        "lp_acc": 0.9524697110904008
+      }
+    },
+    "ministral3-instruct-3b": {
+      "label": "ministral3-instruct-3b",
+      "display_label": "Ministral-3 Instruct 3B",
+      "family": "ministral3-instruct",
+      "params_b": 3.0,
+      "categories": {
+        "World Capital": {
+          "n": 218,
+          "gen_correct": 197,
+          "gen_acc": 0.9036697247706422,
+          "lp_correct": 216,
+          "lp_acc": 0.9908256880733946
+        },
+        "Athlete Sport": {
+          "n": 532,
+          "gen_correct": 421,
+          "gen_acc": 0.7913533834586466,
+          "lp_correct": 469,
+          "lp_acc": 0.881578947368421
+        },
+        "Book Author": {
+          "n": 500,
+          "gen_correct": 264,
+          "gen_acc": 0.528,
+          "lp_correct": 478,
+          "lp_acc": 0.956
+        },
+        "Company Headquarter": {
+          "n": 500,
+          "gen_correct": 235,
+          "gen_acc": 0.47,
+          "lp_correct": 416,
+          "lp_acc": 0.832
+        },
+        "Company Founder": {
+          "n": 203,
+          "gen_correct": 62,
+          "gen_acc": 0.3054187192118227,
+          "lp_correct": 178,
+          "lp_acc": 0.8768472906403941
+        },
+        "Official Language": {
+          "n": 193,
+          "gen_correct": 184,
+          "gen_acc": 0.9533678756476683,
+          "lp_correct": 192,
+          "lp_acc": 0.9948186528497409
+        }
+      },
+      "overall": {
+        "n": 2146,
+        "gen_correct": 1363,
+        "gen_acc": 0.6351351351351351,
+        "lp_correct": 1949,
+        "lp_acc": 0.9082013047530288
+      }
+    },
+    "ministral3-instruct-8b": {
+      "label": "ministral3-instruct-8b",
+      "display_label": "Ministral-3 Instruct 8B",
+      "family": "ministral3-instruct",
+      "params_b": 8.0,
+      "categories": {
+        "World Capital": {
+          "n": 218,
+          "gen_correct": 200,
+          "gen_acc": 0.9174311926605505,
+          "lp_correct": 217,
+          "lp_acc": 0.9954128440366973
+        },
+        "Athlete Sport": {
+          "n": 532,
+          "gen_correct": 421,
+          "gen_acc": 0.7913533834586466,
+          "lp_correct": 509,
+          "lp_acc": 0.956766917293233
+        },
+        "Book Author": {
+          "n": 500,
+          "gen_correct": 254,
+          "gen_acc": 0.508,
+          "lp_correct": 487,
+          "lp_acc": 0.974
+        },
+        "Company Headquarter": {
+          "n": 500,
+          "gen_correct": 326,
+          "gen_acc": 0.652,
+          "lp_correct": 461,
+          "lp_acc": 0.922
+        },
+        "Company Founder": {
+          "n": 203,
+          "gen_correct": 86,
+          "gen_acc": 0.4236453201970443,
+          "lp_correct": 183,
+          "lp_acc": 0.9014778325123153
+        },
+        "Official Language": {
+          "n": 193,
+          "gen_correct": 182,
+          "gen_acc": 0.9430051813471503,
+          "lp_correct": 193,
+          "lp_acc": 1.0
+        }
+      },
+      "overall": {
+        "n": 2146,
+        "gen_correct": 1469,
+        "gen_acc": 0.6845293569431501,
+        "lp_correct": 2050,
+        "lp_acc": 0.9552656104380243
+      }
+    },
+    "ministral3-instruct-14b": {
+      "label": "ministral3-instruct-14b",
+      "display_label": "Ministral-3 Instruct 14B",
+      "family": "ministral3-instruct",
+      "params_b": 14.0,
+      "categories": {
+        "World Capital": {
+          "n": 218,
+          "gen_correct": 202,
+          "gen_acc": 0.926605504587156,
+          "lp_correct": 218,
+          "lp_acc": 1.0
+        },
+        "Athlete Sport": {
+          "n": 532,
+          "gen_correct": 452,
+          "gen_acc": 0.849624060150376,
+          "lp_correct": 524,
+          "lp_acc": 0.9849624060150376
+        },
+        "Book Author": {
+          "n": 500,
+          "gen_correct": 301,
+          "gen_acc": 0.602,
+          "lp_correct": 494,
+          "lp_acc": 0.988
+        },
+        "Company Headquarter": {
+          "n": 500,
+          "gen_correct": 366,
+          "gen_acc": 0.732,
+          "lp_correct": 475,
+          "lp_acc": 0.95
+        },
+        "Company Founder": {
+          "n": 203,
+          "gen_correct": 95,
+          "gen_acc": 0.46798029556650245,
+          "lp_correct": 187,
+          "lp_acc": 0.9211822660098522
+        },
+        "Official Language": {
+          "n": 193,
+          "gen_correct": 185,
+          "gen_acc": 0.9585492227979274,
+          "lp_correct": 192,
+          "lp_acc": 0.9948186528497409
+        }
+      },
+      "overall": {
+        "n": 2146,
+        "gen_correct": 1601,
+        "gen_acc": 0.7460391425908667,
+        "lp_correct": 2090,
+        "lp_acc": 0.9739049394221808
+      }
+    },
+    "ministral3-reasoning-3b": {
+      "label": "ministral3-reasoning-3b",
+      "display_label": "Ministral-3 Reasoning 3B",
+      "family": "ministral3-reasoning",
+      "params_b": 3.0,
+      "categories": {
+        "World Capital": {
+          "n": 218,
+          "gen_correct": 191,
+          "gen_acc": 0.8761467889908257,
+          "lp_correct": 216,
+          "lp_acc": 0.9908256880733946
+        },
+        "Athlete Sport": {
+          "n": 532,
+          "gen_correct": 324,
+          "gen_acc": 0.6090225563909775,
+          "lp_correct": 397,
+          "lp_acc": 0.7462406015037594
+        },
+        "Book Author": {
+          "n": 500,
+          "gen_correct": 81,
+          "gen_acc": 0.162,
+          "lp_correct": 444,
+          "lp_acc": 0.888
+        },
+        "Company Headquarter": {
+          "n": 500,
+          "gen_correct": 142,
+          "gen_acc": 0.284,
+          "lp_correct": 357,
+          "lp_acc": 0.714
+        },
+        "Company Founder": {
+          "n": 203,
+          "gen_correct": 32,
+          "gen_acc": 0.15763546798029557,
+          "lp_correct": 159,
+          "lp_acc": 0.7832512315270936
+        },
+        "Official Language": {
+          "n": 193,
+          "gen_correct": 180,
+          "gen_acc": 0.9326424870466321,
+          "lp_correct": 192,
+          "lp_acc": 0.9948186528497409
+        }
+      },
+      "overall": {
+        "n": 2146,
+        "gen_correct": 950,
+        "gen_acc": 0.4426840633737186,
+        "lp_correct": 1765,
+        "lp_acc": 0.8224603914259087
+      }
+    },
+    "ministral3-reasoning-8b": {
+      "label": "ministral3-reasoning-8b",
+      "display_label": "Ministral-3 Reasoning 8B",
+      "family": "ministral3-reasoning",
+      "params_b": 8.0,
+      "categories": {
+        "World Capital": {
+          "n": 218,
+          "gen_correct": 196,
+          "gen_acc": 0.8990825688073395,
+          "lp_correct": 216,
+          "lp_acc": 0.9908256880733946
+        },
+        "Athlete Sport": {
+          "n": 532,
+          "gen_correct": 379,
+          "gen_acc": 0.7124060150375939,
+          "lp_correct": 468,
+          "lp_acc": 0.8796992481203008
+        },
+        "Book Author": {
+          "n": 500,
+          "gen_correct": 277,
+          "gen_acc": 0.554,
+          "lp_correct": 485,
+          "lp_acc": 0.97
+        },
+        "Company Headquarter": {
+          "n": 500,
+          "gen_correct": 257,
+          "gen_acc": 0.514,
+          "lp_correct": 440,
+          "lp_acc": 0.88
+        },
+        "Company Founder": {
+          "n": 203,
+          "gen_correct": 64,
+          "gen_acc": 0.31527093596059114,
+          "lp_correct": 179,
+          "lp_acc": 0.8817733990147784
+        },
+        "Official Language": {
+          "n": 193,
+          "gen_correct": 180,
+          "gen_acc": 0.9326424870466321,
+          "lp_correct": 193,
+          "lp_acc": 1.0
+        }
+      },
+      "overall": {
+        "n": 2146,
+        "gen_correct": 1353,
+        "gen_acc": 0.630475302889096,
+        "lp_correct": 1981,
+        "lp_acc": 0.9231127679403541
+      }
+    },
+    "ministral3-reasoning-14b": {
+      "label": "ministral3-reasoning-14b",
+      "display_label": "Ministral-3 Reasoning 14B",
+      "family": "ministral3-reasoning",
+      "params_b": 14.0,
+      "categories": {
+        "World Capital": {
+          "n": 218,
+          "gen_correct": 199,
+          "gen_acc": 0.9128440366972477,
+          "lp_correct": 217,
+          "lp_acc": 0.9954128440366973
+        },
+        "Athlete Sport": {
+          "n": 532,
+          "gen_correct": 443,
+          "gen_acc": 0.8327067669172933,
+          "lp_correct": 504,
+          "lp_acc": 0.9473684210526315
+        },
+        "Book Author": {
+          "n": 500,
+          "gen_correct": 257,
+          "gen_acc": 0.514,
+          "lp_correct": 482,
+          "lp_acc": 0.964
+        },
+        "Company Headquarter": {
+          "n": 500,
+          "gen_correct": 319,
+          "gen_acc": 0.638,
+          "lp_correct": 457,
+          "lp_acc": 0.914
+        },
+        "Company Founder": {
+          "n": 203,
+          "gen_correct": 85,
+          "gen_acc": 0.4187192118226601,
+          "lp_correct": 182,
+          "lp_acc": 0.896551724137931
+        },
+        "Official Language": {
+          "n": 193,
+          "gen_correct": 181,
+          "gen_acc": 0.9378238341968912,
+          "lp_correct": 192,
+          "lp_acc": 0.9948186528497409
+        }
+      },
+      "overall": {
+        "n": 2146,
+        "gen_correct": 1484,
+        "gen_acc": 0.6915191053122087,
+        "lp_correct": 2034,
+        "lp_acc": 0.9478098788443616
+      }
+    },
+    "ministral3-base-3b": {
+      "label": "ministral3-base-3b",
+      "display_label": "Ministral-3 Base 3B",
+      "family": "ministral3-base",
+      "params_b": 3.0,
+      "categories": {
+        "World Capital": {
+          "n": 218,
+          "gen_correct": 190,
+          "gen_acc": 0.8715596330275229,
+          "lp_correct": 217,
+          "lp_acc": 0.9954128440366973
+        },
+        "Athlete Sport": {
+          "n": 532,
+          "gen_correct": 448,
+          "gen_acc": 0.8421052631578947,
+          "lp_correct": 481,
+          "lp_acc": 0.9041353383458647
+        },
+        "Book Author": {
+          "n": 500,
+          "gen_correct": 294,
+          "gen_acc": 0.588,
+          "lp_correct": 487,
+          "lp_acc": 0.974
+        },
+        "Company Headquarter": {
+          "n": 500,
+          "gen_correct": 275,
+          "gen_acc": 0.55,
+          "lp_correct": 434,
+          "lp_acc": 0.868
+        },
+        "Company Founder": {
+          "n": 203,
+          "gen_correct": 77,
+          "gen_acc": 0.3793103448275862,
+          "lp_correct": 180,
+          "lp_acc": 0.8866995073891626
+        },
+        "Official Language": {
+          "n": 193,
+          "gen_correct": 186,
+          "gen_acc": 0.9637305699481865,
+          "lp_correct": 192,
+          "lp_acc": 0.9948186528497409
+        }
+      },
+      "overall": {
+        "n": 2146,
+        "gen_correct": 1470,
+        "gen_acc": 0.684995340167754,
+        "lp_correct": 1991,
+        "lp_acc": 0.9277726001863933
+      }
+    },
+    "ministral3-base-8b": {
+      "label": "ministral3-base-8b",
+      "display_label": "Ministral-3 Base 8B",
+      "family": "ministral3-base",
+      "params_b": 8.0,
+      "categories": {
+        "World Capital": {
+          "n": 218,
+          "gen_correct": 193,
+          "gen_acc": 0.8853211009174312,
+          "lp_correct": 216,
+          "lp_acc": 0.9908256880733946
+        },
+        "Athlete Sport": {
+          "n": 532,
+          "gen_correct": 431,
+          "gen_acc": 0.8101503759398496,
+          "lp_correct": 503,
+          "lp_acc": 0.9454887218045113
+        },
+        "Book Author": {
+          "n": 500,
+          "gen_correct": 237,
+          "gen_acc": 0.474,
+          "lp_correct": 492,
+          "lp_acc": 0.984
+        },
+        "Company Headquarter": {
+          "n": 500,
+          "gen_correct": 363,
+          "gen_acc": 0.726,
+          "lp_correct": 477,
+          "lp_acc": 0.954
+        },
+        "Company Founder": {
+          "n": 203,
+          "gen_correct": 99,
+          "gen_acc": 0.4876847290640394,
+          "lp_correct": 185,
+          "lp_acc": 0.9113300492610837
+        },
+        "Official Language": {
+          "n": 193,
+          "gen_correct": 185,
+          "gen_acc": 0.9585492227979274,
+          "lp_correct": 193,
+          "lp_acc": 1.0
+        }
+      },
+      "overall": {
+        "n": 2146,
+        "gen_correct": 1508,
+        "gen_acc": 0.7027027027027027,
+        "lp_correct": 2066,
+        "lp_acc": 0.9627213420316869
+      }
+    },
+    "ministral3-base-14b": {
+      "label": "ministral3-base-14b",
+      "display_label": "Ministral-3 Base 14B",
+      "family": "ministral3-base",
+      "params_b": 14.0,
+      "categories": {
+        "World Capital": {
+          "n": 218,
+          "gen_correct": 203,
+          "gen_acc": 0.9311926605504587,
+          "lp_correct": 218,
+          "lp_acc": 1.0
+        },
+        "Athlete Sport": {
+          "n": 532,
+          "gen_correct": 465,
+          "gen_acc": 0.8740601503759399,
+          "lp_correct": 521,
+          "lp_acc": 0.9793233082706767
+        },
+        "Book Author": {
+          "n": 500,
+          "gen_correct": 344,
+          "gen_acc": 0.688,
+          "lp_correct": 494,
+          "lp_acc": 0.988
+        },
+        "Company Headquarter": {
+          "n": 500,
+          "gen_correct": 376,
+          "gen_acc": 0.752,
+          "lp_correct": 479,
+          "lp_acc": 0.958
+        },
+        "Company Founder": {
+          "n": 203,
+          "gen_correct": 105,
+          "gen_acc": 0.5172413793103449,
+          "lp_correct": 188,
+          "lp_acc": 0.9261083743842364
+        },
+        "Official Language": {
+          "n": 193,
+          "gen_correct": 186,
+          "gen_acc": 0.9637305699481865,
+          "lp_correct": 192,
+          "lp_acc": 0.9948186528497409
+        }
+      },
+      "overall": {
+        "n": 2146,
+        "gen_correct": 1679,
+        "gen_acc": 0.7823858341099721,
+        "lp_correct": 2092,
+        "lp_acc": 0.9748369058713886
+      }
+    }
+  }
+}
