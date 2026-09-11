@@ -68,10 +68,5 @@ Model evaluations automatically leverage `CUDA` (if available), `MPS` (Apple Sil
 .
 ├── ic_factual/               # Core library (catalogue, config, loaders, device handling)
 ├── scripts/                  # Evaluation, plotting, and export scripts
-├── summaries/                # Precomputed evaluation summaries & per-layer logit-lens data
-├── paper/                    # Paper figures (12 PNGs) and tables (10 LaTeX fragments)
-├── figures/                  # Local figures output directory (gitignored)
-├── tables/                   # Local tables output directory (gitignored)
-├── data/                     # Generated evaluation prompts & datasets (gitignored)
-└── results/                  # Evaluation outputs and per-sample logs (gitignored)
+└── summaries/                # Precomputed evaluation summaries & per-layer logit-lens data
 ```
